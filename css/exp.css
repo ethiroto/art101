@@ -1,0 +1,62 @@
+p.callout{
+    color:red;
+}
+/*This selects all the paragraphs that have the class property callout. 
+* ids use # instead of .
+
+if we leave the paragraph part off
+it just does it for all the callouts
+*/
+.callout{
+    color:red
+}
+
+div.callout p{
+    color: red
+}
+/*Select any paragraph that is within a div with class callout
+*/
+
+/*
+In CSS the more specific selection take precedence
+
+can use tag names, id names, or classes as selection
+/*
+
+THIS BELOW IS NOT SAYING THAT THERE IS A FOOTER INSIDE OF DIV, THIS IS SAYING A DIV WITH FOOTER CLASS
+*/
+
+div.footer{
+    padding:20px
+}
+
+/* THIS IS */
+div footer{
+    padding:10x
+}
+/*SPACES*/
+.sidebar img{
+    margin: 10x;
+}
+/* WHATEVER HAS A CLASS SIDEBAR, AND INSIDE OF THAT THERE IS AN IMAGE, SELECT THAT
+DOESN'T HAVE TO BE AN IMMEDIATE CHILD
+*/
+
+
+/*OR*/
+.highlight, img{
+    border-width: 1px;
+}
+/* anything with class highlight OR is an IMAGE, SO YOU CAN APPLY TO BOTH*/
+
+/* WITH A >  MEANS ONLY SELECT THE IMMEDIATE CHILD*/
+
+.highlight>img{
+    border-width: 1px;
+}
+
+/* Pseudo-classes ALLOW YOU To DO THINGS THAT ARE SPECIAL INTERACTIONS w/ THE PAGE CANT MAKE UP PSEUDO CLASSES*/
+
+.special:hover{
+    color:red;
+}
