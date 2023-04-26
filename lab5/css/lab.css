@@ -7,3 +7,11 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+.flex-content {
+    display: flex;
+    font-size: larger;
+  }
+.flex-content img{
+  margin-left: 80px;
+}
