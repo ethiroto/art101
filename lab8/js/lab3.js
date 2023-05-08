@@ -7,8 +7,12 @@ function sortName(){
     //take input
     var userName =window.prompt("Give me your name! I'll sort it!");
     console.log("userName ",userName)
+
+     // Convert to lowercase and remove spaces
+     var userNameLower = userName.toLowerCase().replace(/\s+/g, '');
+
     //turn name into array
-    var nameSplit= userName.split('');
+    var nameSplit= userNameLower.split('');
     console.log("nameSplit ",nameSplit)
     //sort array
     var sortedArray=nameSplit.sort();
@@ -22,6 +26,4 @@ function sortName(){
 
 var nameOutput=sortName();
 
-document.writeln("this is the name sorted: ",nameOutput);
-
-
+document.writeln("<div class = 'jumbledName'>this is the name sorted: ",nameOutput,"</div>");
