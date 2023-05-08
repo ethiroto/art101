@@ -1,27 +1,34 @@
-// index.js - Arrays and Objects
-// Author: Ethan Christian and Aaron Rodriguez
-// Date: 5/1/2023
+var a = [1, 33, 42, 98, 31];
 
-//Function takes in a username and returns a sorted version
-
-//take input
-var userName =window.prompt("Give me your name! I'll sort it!");
-console.log("userName ",userName)
-
-function sortName(userName){
-    //turn name into array
-    var nameSplit= userName.split('');
-    console.log("nameSplit ",nameSplit)
-    //sort array
-    var sortedArray=nameSplit.sort();
-    console.log("sortedArray ",sortedArray)
-    //turn back into string
-    var sortedName=sortedArray.join('');
-    console.log("sortedName ",sortedName)
-
-    return sortedName
+function sqr(x) {
+    return x * x;
 }
 
-var nameOutput=sortName(userName);
+var mapResults = [
+    'My array is: ' + a,
+    '2 squared is: ' + sqr(2),
+    '4 squared is: ' + sqr(4),
+    'My array squared: ' + a.map(sqr),
+    'My array squared: ' + a.map(sqr),
+].join('<br>');
 
-document.writeln("this is the name sorted: ",nameOutput);
+var result = a.map(function (x) {
+    return x % 2 !== 0;
+});
+
+var outputEl = document.getElementById('output');
+outputEl.innerHTML = mapResults + '<br>These numbers in my array were odd: ' + result;
+
+
+
+function numAddition(num1,num2,func){
+    res=num1+num2;
+    func(res)
+
+}
+
+function praise(result){
+    console.log('Amazing! the result was: ',res)
+}
+
+console.log(numAddition(3,4,praise));

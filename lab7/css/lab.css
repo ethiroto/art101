@@ -17,5 +17,11 @@
   font-size: larger;
 }
 .flex-content img{
-margin-left: 80px;
+  margin-left: 80px;
+}
+
+.jumbledName{
+  color: azure;
+  text-shadow: 2px 2px 4px #000;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
