@@ -24,5 +24,31 @@ outputEl.style.color="green";
 
 //blurring an image
 imgEl=document.getElementById("lab-img");
-imgEl.style.filter = "blur(5px)";
+
+
+//TASK X:
+outputEl.prepend("This happens after in js, but before on page!");
+
+var buttonEl=document.getElementById('blur');
+
+buttonEl.innerHTML="blur image";
+
+//function that blurs and deblurs image
+
+//setting blurred condition
+var imgBlurred=false;
+
+buttonEl.addEventListener('click',function(){
+    if (imgBlurred==false){
+        imgEl.style.filter = "blur(5px)";
+        imgBlurred=true;
+        buttonEl.innerHTML="deblur image";
+    }
+    else{
+        imgEl.style.filter = "";
+        imgBlurred=false;
+        buttonEl.innerHTML="blur image";
+    }
+})
+
 
