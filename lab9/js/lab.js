@@ -1,4 +1,4 @@
-// index.js - Arrays and Objects
+// index.js - Javascript for the web
 // Author: Ethan Christian and Aaron Rodriguez
 // Date: 5/10/2023
 
