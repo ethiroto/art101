@@ -28,3 +28,44 @@
   background-color: #008CBA;
   transform: scale(1.03);
 }
+
+.fun-button{
+  color: green;
+  background-color: greenyellow;
+}
+
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
+
+.funner-button {
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background-size: 200% 200%;
+  animation: spin 5s linear infinite, gradient 3s ease infinite;
+  box-shadow: 0 3px 5px 2px rgba(255, 105, 135, .3);
+  border-radius: 50px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
