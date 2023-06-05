@@ -1,0 +1,28 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 3px #000000;
+  background-color: #DDD8C4;
+  text-shadow: 2px 2px 2px rgba(32, 48, 34, 0.437);
+}
+
+#lab-img{
+width:20%;
+border: 2px solid rgb(219, 6, 6);
+margin-bottom:10px;
+}
+
+.flex-content {
+display: flex;
+font-size: larger;
+}
+.flex-content img{
+margin-left: 140px;
+}
+
+
+
+
